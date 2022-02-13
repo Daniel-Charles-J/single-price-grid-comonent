@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;800&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Karla', sans-serif;
+  background: rgb(190, 226, 238);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container{
+  width: 50%;
+  height: 65vh;
+}
+
+.container .section1{
+  background: white;
+  height: 30vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.container .section2{
+  width:100%;
+  height: 35vh;
+  display: flex;
+}
+
+.container .section2 .section2-sec1{
+  width: 50%;
+  height: 35vh;
+  background-color: hsl(179, 62%, 43%);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+button{
+  background-color: hsl(71, 73%, 54%);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+}
+
+.container .section2 .section2-sec2{
+  width: 50%;
+  height: 35vh;
+  background-color: hsl(179, 47%, 55%);
+  padding: 40px;
+}
+
+.font{
+  color: rgb(216, 210, 210);
+}
+
+
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container{
+    width: 60%;
+    height: 80vh;
+    margin-bottom: 60px;
+  }
+
+  .container .section1{
+    padding: 20px;
+    row-gap: 10px;
+  }
+
+  .container .section2{
+    flex-direction: column;
+  }
+
+  .container .section2 .section2-sec1{
+    width: 100%;
+    padding: 30px;
+    row-gap: 5px;
+  }
+  
+  .container .section2 .section2-sec2{
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+  
+  .container{
+    width: 60%;
+    height: 80vh;
+    margin-bottom: 60px;
+  }
+
+  .container .section1{
+    padding: 20px;
+    row-gap: 10px;
+  }
+  .container .section2{
+    flex-direction: column;
+  }
+
+  .container .section2 .section2-sec1{
+    width: 100%;
+    padding: 30px;
+    row-gap: 5px;
+  }
+  
+  .container .section2 .section2-sec2{
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container{
+    width: 50%;
+    height: 65vh;
+    margin-bottom: 0px;
+  }
+
+  .container .section1{
+    padding: 30px;
+    row-gap: 5px;
+  }
+
+  .container .section2{
+    flex-direction: row;
+  }
+
+  .container .section2 .section2-sec1{
+    width: 50%;
+    padding: 30px;
+    row-gap: 5px;
+  }
+  
+  .container .section2 .section2-sec2{
+    width: 50%;
+    padding: 30px;
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 960px and up) */
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container .section1, .container .section2 .section2-sec1{
+    padding: 40px;
+    row-gap: 10px;
+  }
+  
+  .container .section2 .section2-sec2{
+    padding: 40px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}
